@@ -1,10 +1,16 @@
 import React from 'react';
 import styled from 'styled-components/native';
 
+import Header from '@/components/Header';
+import Highlight from '@/components/Highlight';
+import GroupCard from '@/components/GroupCard';
+
 const Login = () => {
   return (
     <StyledView>
-      <StyledTitleText>Groups</StyledTitleText>
+      <Header />
+      <Highlight title='Turmas' subtitle='Jogue com a sua turma' />
+      <GroupCard title='Nome da Turma' />
     </StyledView>
   );
 };
